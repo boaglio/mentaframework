@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<project name="ProductAjaxSeach" default="build" basedir=".">
+
+<property name="sourcedir" value="${basedir}/WEB-INF/src"/>
+<property name="targetdir" value="${basedir}/WEB-INF/classes"/>
+<property name="librarydir" value="${basedir}/WEB-INF/lib"/>
+<property name="resourcesdir" value="${basedir}/WEB-INF/resources"/>
+
+    <path id="libraries">
+        <fileset dir="${librarydir}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="clean">
+        <delete dir="${targetdir}"/>
+        <mkdir dir="${targetdir}"/>
+    </target>
+
+    <target name="compile" depends="clean">
+      <javac srcdir="${sourcedir}"
+             destdir="${targetdir}"
+             classpathref="libraries"
+             debug="on"
+             deprecation="on" source="1.4" target="1.4" />
+      <copy todir="${targetdir}">
+         <fileset dir="${resourcesdir}"/>
+      </copy>
+    </target>
+    
+    <target name="compile-config">
+      <javac srcdir="${sourcedir}"
+             destdir="${targetdir}"
+             includes="ApplicationManager.java"
+             classpathref="libraries"
+             debug="on"
+             deprecation="on" source="1.4" target="1.4" />
+    </target>    
+
+    <target name="build" depends="compile">
+	    <delete file="ProductAjaxSeach.war"/>
+	    <jar jarfile="ProductAjaxSeach.war" basedir="." excludes="*.zip, *.war"/>    
+    </target>
+    
+    <target name="bundle">
+        <delete file="ProductAjaxSeach.zip"/>
+        <zip destfile="ProductAjaxSeach.zip"
+           basedir="."
+           excludes="ProductAjaxSeach.war" />
+    </target>
+    
+
+</project>

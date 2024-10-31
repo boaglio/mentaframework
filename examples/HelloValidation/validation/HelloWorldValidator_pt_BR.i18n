@@ -1,0 +1,12 @@
+###############################################
+# Messages for the action HelloWorldValidator #
+###############################################
+
+# pt_BR
+1 = Campo obrigatório deve ser preenchido
+2 = O seu apelido deve possuir entre %min% e %max% caracteres.
+3 = Você precisa ter mais do que %min% anos.
+4 = A sua senha deve possuir entre %min% e %max% caracteres.
+5 = As senhas não conferem.
+
+

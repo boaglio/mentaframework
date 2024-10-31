@@ -1,0 +1,10 @@
+###############################################
+# Messages for the action HelloWorldValidator #
+###############################################
+
+# en_US
+1 = Required field cannot be left blank
+2 = Your username must be between %min% and %max% characters long.
+3 = You must be %min% years old or older.
+4 = Your password must be between %min% and %max% characters long.
+5 = Passwords do not match.

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+	<display-name>Hello Mentawai/Templates</display-name>
+	<description>
+		Hello Mentawai/Templates
+	</description>
+
+    <servlet>
+        <servlet-name>Controller</servlet-name>
+        <servlet-class>org.mentawai.core.Controller</servlet-class>
+		<load-on-startup>1</load-on-startup>		
+    </servlet>
+
+    <!-- You must choose an extension to indicate a mentawai action -->
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>*.mtw</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+            <servlet-name>TemplateServlet</servlet-name>
+            <servlet-class>
+                org.mentawai.template.JspTemplateServlet
+            </servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>TemplateServlet</servlet-name>
+            <url-pattern>*.page</url-pattern>
+    </servlet-mapping>
+
+</web-app>
