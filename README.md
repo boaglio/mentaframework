@@ -12,7 +12,7 @@ The Mentawai goal is to be a simple, flexible, joyful and productive Java web fr
 
 ![br](img/brazil.gif)
 
-O objectivo do Mentawai é ser um simples, flexível, agradável e produtivo framework Java para Web.
+O objetivo do Mentawai é ser um simples, flexível, agradável e produtivo framework Java para Web.
 
 * branch dos [fontes originais da SourceForge de 2011](https://sourceforge.net/p/mentaframework/code/HEAD/tree/)
 * confira os [fontes dos exemplos](examples/) e das [imagens e logos](img/) disponíveis
