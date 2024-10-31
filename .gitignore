@@ -13,6 +13,8 @@
 # VSCODE
 .vscode/*
 
+target/*
+
 # Package Files #
 *.jar
 *.war

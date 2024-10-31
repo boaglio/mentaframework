@@ -5,19 +5,9 @@
 	<groupId>org.mentaframework</groupId>
 	<artifactId>mentawai</artifactId>
 	<name>Mentawai Web Framework</name>
-	<version>2.0.0</version>
-	<description>The Mentawai goal is to be a simple, flexible, joyful and
-		productive Java web framework.</description>
+	<version>2.0.1-SNAPSHOT</version>
+	<description>The Mentawai goal is to be a simple, flexible, joyful and productive Java web framework.</description>
 	<url>http://www.mentaframework.org/</url>
-	<issueManagement>
-		<system>Jira</system>
-		<url>http://jira.mentaframework.org/</url>
-	</issueManagement>
-	<parent>
-		<groupId>org.sonatype.oss</groupId>
-		<artifactId>oss-parent</artifactId>
-		<version>5</version>
-	</parent>
 	<developers>
 		<developer>
 			<id>saoj</id>
@@ -391,7 +381,7 @@
 		<id>github</id>
 		<name>GitHub boaglio Apache Maven Packages</name>
 		<url>https://maven.pkg.github.com/boaglio/mentaframework</url>
-	 </repository>
+	 </repository>  
 	</distributionManagement>
 
 </project>
