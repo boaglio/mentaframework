@@ -384,5 +384,15 @@
 			</plugin>
 		</plugins>
 	</reporting>
+
+	<!-- GitHub -->
+	<distributionManagement>
+ 	 <repository>
+		<id>github</id>
+		<name>GitHub boaglio Apache Maven Packages</name>
+		<url>https://maven.pkg.github.com/boaglio/mentaframework</url>
+	 </repository>
+	</distributionManagement>
+
 </project>
 
